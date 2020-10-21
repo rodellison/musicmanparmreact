@@ -18,3 +18,15 @@ and onto a serverless lambda Database app.
 The Alexa Music Man service can then use the database to 
 locate corrected values to use for it's SongKick API lookup.
 
+## Notes
+REQUIRED, but not included in this repo.. A **.env** file should be created at the 
+root of the project, and should contain an environmental variable:
+<code>
+**_REACT_APP_COGNITO_URL_**='YOUR_COGNITO_AUTHENTICATION_URL'
+</code>
+
+This ENV is used in the index.js file for redirecting for authentication.  The Cognito URL looks something like: 
+
+<code>
+https://YOUR_APP_NAME.auth.us-east-1.amazoncognito.com/login?client_id=YOUR_CLIENT_ID&response_type=token&scope=email+openid&redirect_uri=YOUR_CALLBACK_URL
+</code>

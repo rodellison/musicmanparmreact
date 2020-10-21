@@ -56,7 +56,7 @@ class Submission extends Component {
         };
 
          console.log("performing remote API fetch")
-        fetch("https://rhqi8o5wc5.execute-api.us-east-1.amazonaws.com/dev/parmdata", requestOptions)
+        fetch(process.env.REACT_APP_PARMDATA_URL, requestOptions)
             .then(async response => {
                 const data = await response.json();
 

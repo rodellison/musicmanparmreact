@@ -10,7 +10,7 @@ ReactDOM.render(
     <Router>
         <Route exact path="/" component={App} />
         <Route path='/authenticate' component={() => {
-            window.location.href = 'https://musicmanparmfixer.auth.us-east-1.amazoncognito.com/login?client_id=7ammhdth9itfqsf839j987i9h8&response_type=token&scope=email+openid&redirect_uri=http://localhost:3000';
+            window.location.href = process.env.REACT_APP_COGNITO_URL
             return null;
         }}/>
     </Router>,
