@@ -20,13 +20,15 @@ locate corrected values to use for it's SongKick API lookup.
 
 ## Notes
 REQUIRED, but not included in this repo.. A **.env** file should be created at the 
-root of the project, and should contain an environmental variable:
+root of the project, and should contain two environmental variables:
 <code>
 **_REACT_APP_COGNITO_URL_**='YOUR_COGNITO_AUTHENTICATION_URL'
+**_REACT_APP_PARMDATA_API_URL_**='YOUR_BACKEND_DATABASE_HANDLER_API_URL'
 </code>
 
-This ENV is used in the index.js file for redirecting for authentication.  The Cognito URL looks something like: 
-
+This COGNITO URL is used in the index.js file for redirecting for authentication and looks 
+similar to: 
 <code>
 https://YOUR_APP_NAME.auth.us-east-1.amazoncognito.com/login?client_id=YOUR_CLIENT_ID&response_type=token&scope=email+openid&redirect_uri=YOUR_CALLBACK_URL
 </code>
+

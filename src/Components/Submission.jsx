@@ -56,7 +56,7 @@ class Submission extends Component {
         };
 
          console.log("performing remote API fetch")
-        fetch(process.env.REACT_APP_PARMDATA_URL, requestOptions)
+        fetch(process.env.REACT_APP_PARMDATA_API_URL, requestOptions)
             .then(async response => {
                 const data = await response.json();
 
